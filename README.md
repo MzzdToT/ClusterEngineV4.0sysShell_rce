@@ -1,7 +1,9 @@
-# ClusterEngineV4.0sysShell_exp
+# ClusterEngineV4.0sysShell_RCE
+
 浪潮ClusterEngineV4.0 sysShell文件存在远程命令执行漏洞。
 
 ## Fofa指纹
+
 title="TSCEV4.0"
 
 ## 工具利用
@@ -14,11 +16,12 @@ python3 sysshell_poc.py -u http://127.0.0.1:1111 单个url测试
 
 python3 sysshell_poc.py -f url.txt 批量检测
 
+![](./poc.png)
+
+
 exp：
 
 python3 sysshell_exp.py -u http://127.0.0.1:1111
-
-![](./poc.png)
 
 ![](./exp.png)
 
